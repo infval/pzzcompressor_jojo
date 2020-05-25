@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__  = "infval"
 
 from pathlib import Path
@@ -164,9 +164,9 @@ def get_argparser():
     group.add_argument('-c', '--compress', action='store_true')
     group.add_argument('-d', '--decompress', action='store_true', help='Unpacked files from PZZ')
     #group.add_argument('-bp', '--batch-pack', action='store_true')
-    group.add_argument('-bu', '--batch-unpack', action='store_true', help='INPUT relative pattern; e.g. \\AFS_DATA\\*.pzz')
-    group.add_argument('-bc', '--batch-compress', action='store_true', help='INPUT relative pattern; e.g. \\AFS_DATA\\*.bin')
-    group.add_argument('-bd', '--batch-decompress', action='store_true', help='INPUT relative pattern; e.g. \\AFS_DATA\\*_compressed.dat')
+    group.add_argument('-bu', '--batch-unpack', action='store_true', help='INPUT relative pattern; e.g. AFS_DATA\\*.pzz')
+    group.add_argument('-bc', '--batch-compress', action='store_true', help='INPUT relative pattern; e.g. AFS_DATA\\*.bin')
+    group.add_argument('-bd', '--batch-decompress', action='store_true', help='INPUT relative pattern; e.g. AFS_DATA\\*_compressed.dat')
     return parser
 
 

@@ -4,7 +4,7 @@ from pathlib import Path
 from os import system
 
 parser = argparse.ArgumentParser(description='pzzcomp_jojo helper')
-parser.add_argument('input_pattern', metavar='INPUT', help='relative pattern; e.g. \\AFS_DATA\\*_compressed.dat')
+parser.add_argument('input_pattern', metavar='INPUT', help='relative pattern; e.g. AFS_DATA\\*_compressed.dat')
 parser.add_argument('output_dir', metavar='OUTPUT', help='directory')
 parser.add_argument('-e', '--extension', metavar='EXT', help='output; .bin, .dat, .pzz, etc')
 parser.add_argument('-y', '--yes', action='store_true', help='overwrite')
