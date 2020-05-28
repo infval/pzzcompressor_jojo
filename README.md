@@ -40,9 +40,10 @@ pzzcomp_jojo_batch.py
 
 Decompress
 ```
-pzzcomp_jojo_batch.py -d Unpacked\*_compressed.dat \Uncompressed --extension .bin
+pzzcomp_jojo_batch.py -d Unpacked\*_compressed.dat Uncompressed --extension .bin
 ```
 Compress
 ```
 pzzcomp_jojo_batch.py -c Uncompressed\*.bin dir --extension .dat
 ```
+**Note**: a path that starts with `\` or `/` is absolute. Example for Windows: `\dir` or `/dir` -> `C:\dir`.
